@@ -101,7 +101,7 @@ const App = () => {
     if (isCelsius) {
       return tempCelsius;
     } else {
-      return (tempCelsius * 9) / 5 + 32;
+      return ((tempCelsius * 9) / 5 + 32).toFixed(2);
     }
   };
 
