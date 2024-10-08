@@ -3,7 +3,7 @@
 # React + Vite
 
 step 1: Install all the dependencies
-npm install
+<h3>npm install</h3>
 
 step 2:Start the project
-npm run dev
+<h3>npm run dev</h3>
