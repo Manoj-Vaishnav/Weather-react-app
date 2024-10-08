@@ -1,0 +1,222 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General container styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f0f4f8;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.input {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #777;
+}
+
+li {
+  list-style: none;
+}
+
+.mid_data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 15px; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #777;
+  text-align: center;
+}
+
+.other_report {
+  padding: 15px;
+}
+
+.weather_logo {
+  font-size: 100px;
+  color: #888;
+}
+
+.temperature_current {
+  font-stretch: narrower;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  color: #444;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 5px;
+  text-align: center;
+  gap: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+}
+
+.unit {
+  font-size: 10px;
+  font-weight: 300;
+  color: #555;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.weather {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+}
+
+.buttons>button {
+  border: none;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Responsive Styling */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .Header {
+    gap: 30px;
+  }
+
+  .input {
+    font-size: 16px;
+  }
+
+  .mid_data {
+    grid-template-columns: 1fr;
+    font-size: 16px;
+  }
+
+  .weather_logo {
+    font-size: 80px;
+  }
+
+  .temperature_current {
+    font-size: 80px;
+  }
+
+  .days {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
+  .Header {
+    gap: 20px;
+  }
+
+  .input {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mid_data {
+    font-size: 14px;
+    grid-template-columns: 1fr;
+  }
+
+  .weather_logo {
+    font-size: 60px;
+  }
+
+  .temperature_current {
+    font-size: 60px;
+  }
+
+  .days {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+
+  .other_report li {
+    font-size: 12px;
+  }
+
+  .unit {
+    font-size: 8px;
+  }
+}
+
+/* Larger Laptops and Desktops */
+@media (min-width: 1440px) {
+  .Header {
+    gap: 50px;
+  }
+
+  .input {
+    font-size: 20px;
+  }
+
+  .mid_data {
+    font-size: 20px;
+  }
+
+  .weather_logo {
+    font-size: 120px;
+  }
+
+  .temperature_current {
+    font-size: 120px;
+  }
+
+  .days {
+    font-size: 18px;
+  }
+}
